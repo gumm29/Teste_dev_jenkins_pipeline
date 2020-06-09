@@ -12,7 +12,7 @@ pipeline{
           //     pwd
           //     """
           sh 'gem install bundler'
-          sh 'cd Test_integrado_jenkins && pwd && bundle install'
+          sh 'cd Test_integrado_jenkins && pwd && bundle install && cucumber'
           // sh 'cd ./Test_integrado_jenkins/'
           // sh 'ls'
           // sh 'ruby -v'
