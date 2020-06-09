@@ -12,12 +12,12 @@ pipeline{
               pwd
               """
           
-          sh 'cd ./Test_integrado_jenkins/'
+          // sh 'cd ./Test_integrado_jenkins/'
           sh 'ls'
           sh 'ruby -v'
           sh 'gem install bundler'
           sh 'bundle install'
-        //   sh 'cucumber'
+          // sh 'cucumber'
         //   sh 'cd .. Test_integrado_jenkins'
         //   sh 'rm -r Test_integrado_jenkins'
         }
