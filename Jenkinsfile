@@ -4,7 +4,7 @@ pipeline{
       stage("teste 1"){
         steps{
           echo 'printar pipeline teste'
-          start index.html
+          sh start index.html
         }
       }
     }
