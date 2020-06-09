@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("teste 1"){
             steps{
-                echo 'printar pipeline automatico'
+                echo 'printar pipeline teste'
             }
         }
     }
