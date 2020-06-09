@@ -7,9 +7,9 @@ pipeline{
           sh 'rm -r Test_integrado_jenkins'
           sh 'git clone https://github.com/gumm29/Test_integrado_jenkins.git'
           
-          sh "$PWD"
-          dir('./Test_integrado_jenkins'){sh "$PWD"}
-          sh "$PWD"
+          sh "pwd"
+          dir('./Test_integrado_jenkins'){sh "pwd"}
+          sh "pwd"
           
           sh 'cd ./Test_integrado_jenkins/'
           sh 'ls'
