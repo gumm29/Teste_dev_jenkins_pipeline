@@ -6,9 +6,10 @@ pipeline{
           echo 'printar pipeline teste'
           sh 'rm -r Test_integrado_jenkins'
           sh 'git clone https://github.com/gumm29/Test_integrado_jenkins.git'
-
-          dir('./Test_integrado_jenkins'){sh 'ls'}
-          sh 'ls'
+          
+          sh "$PWD"
+          dir('./Test_integrado_jenkins'){sh "$PWD"}
+          sh "$PWD"
           
           sh 'cd ./Test_integrado_jenkins/'
           sh 'ls'
