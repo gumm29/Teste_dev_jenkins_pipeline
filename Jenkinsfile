@@ -11,13 +11,13 @@ pipeline{
           //     cd Test_integrado_jenkins 
           //     pwd
           //     """
-          
-          sh 'cd Test_integrado_jenkins && pwd'
-          // sh 'cd ./Test_integrado_jenkins/'
-          sh 'ls'
-          sh 'ruby -v'
           sh 'gem install bundler'
-          sh 'bundle install'
+          sh 'cd Test_integrado_jenkins && pwd && bundle install'
+          // sh 'cd ./Test_integrado_jenkins/'
+          // sh 'ls'
+          // sh 'ruby -v'
+          
+          // sh 'bundle install'
           // sh 'cucumber'
         //   sh 'cd .. Test_integrado_jenkins'
         //   sh 'rm -r Test_integrado_jenkins'
