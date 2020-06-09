@@ -9,7 +9,7 @@ pipeline{
           sh 'cd Test_integrado_jenkins'
           sh 'ruby -v'
           sh 'gem install bundler'
-          sh 'bundle install --jobs'
+          sh 'bundle install'
         //   sh 'cucumber'
         //   sh 'cd .. Test_integrado_jenkins'
         //   sh 'rm -r Test_integrado_jenkins'
