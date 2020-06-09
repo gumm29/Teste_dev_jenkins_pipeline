@@ -6,7 +6,7 @@ pipeline{
           echo 'printar pipeline teste'
           start index.html
         }
-      },
+      }
       stage("integrar teste integrado"){
         steps{
           sh ruby -v
