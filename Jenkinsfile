@@ -5,12 +5,11 @@ pipeline{
         steps{
           echo 'printar pipeline teste'
           sh 'rm -r Test_integrado_jenkins'
-          sh 'sudo su git'
           sh 'git clone https://github.com/gumm29/Test_integrado_jenkins.git'
           sh 'cd Test_integrado_jenkins'
           sh 'ruby -v'
           sh 'gem install bundler'
-          sh 'bundle install'
+          sh 'bundle exec install'
           sh 'cucumber'
         }
       }
