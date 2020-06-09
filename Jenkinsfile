@@ -7,11 +7,12 @@ pipeline{
           sh 'rm -r Test_integrado_jenkins'
           sh 'git clone https://github.com/gumm29/Test_integrado_jenkins.git'
           
-          sh """
-              cd Test_integrado_jenkins 
-              pwd
-              """
+          // sh """
+          //     cd Test_integrado_jenkins 
+          //     pwd
+          //     """
           
+          sh 'cd Test_integrado_jenkins && pwd'
           // sh 'cd ./Test_integrado_jenkins/'
           sh 'ls'
           sh 'ruby -v'
