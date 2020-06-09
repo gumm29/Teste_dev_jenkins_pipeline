@@ -8,11 +8,11 @@ pipeline{
           sh 'cd Test_integrado_jenkins'
           sh 'ruby -v'
           sh 'gem install bundler'
-          sh 'bundle exec install'
-          sh 'cucumber'
-          sh 'cd .. Test_integrado_jenkins'
-          sh 'rm -r Test_integrado_jenkins'
-        }
+          sh 'bundle install --jobs'
+        //   sh 'cucumber'
+        //   sh 'cd .. Test_integrado_jenkins'
+        //   sh 'rm -r Test_integrado_jenkins'
+        // }
       }
     }
 }
