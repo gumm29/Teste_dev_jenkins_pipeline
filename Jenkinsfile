@@ -12,7 +12,7 @@ pipeline{
         //   sh 'cucumber'
         //   sh 'cd .. Test_integrado_jenkins'
         //   sh 'rm -r Test_integrado_jenkins'
-        // }
+        }
       }
     }
 }
