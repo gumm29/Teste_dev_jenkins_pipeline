@@ -1,6 +1,9 @@
-<input type="text" placeholder="nome"/>
+<input type="text" placeholder="nome" id="nome"/>
 <button onclick="alerta()">Enviar</button>
 
 <script>
-  function alerta(){ alert('enviado com sucesso') }
+  function alerta(){ 
+    var nome = document.getElementById("nome").value;
+    alert('enviado com sucesso '+nome) 
+  }
 </script>
